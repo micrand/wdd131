@@ -7,6 +7,9 @@ blue:20a4f3
 */
 :root {
     --primary-color: #20a4f3;
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --grey-color: #DEDEDE;
 
     --primary-bgcolor: #011627;
 }
@@ -31,25 +34,70 @@ h1 {
     font-weight: 400;
     font-style: normal;
 }
-header {
-    padding: 20px;
-}
+
 nav ul {
     display: flex;    
     justify-content: center;
     align-items: center;
     background-color: var(--primary-bgcolor);
 }
-nav ul li {
-    
+nav li {
+    padding:10px 25px;
 }
-nav a {
-    color:aliceblue;
+nav li a {
+    color: var(--white-color);    
 }
-/* */
+
+
+
+h2 {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto 300px;
+}
+
+aside a {
+    color:var(--black-color);
+}
+aside li {
+    border:1px solid var(--black-color);
+}
+footer {
+    background-color:var(--primary-bgcolor);
+    color: var(--white-color);
+}
+footer a {
+    color:var(--white-color);
+}
+/* CUSTOM STYLES */
 .max-width {
     width: 960px;;
 }
 .mx-auto {
     margin: 0 auto;
+}
+.p20 {
+    padding:20px;
+}
+.p10 {
+    padding:10px;
+}
+.mt20 {
+    margin-top:20px;
+}
+.ml20 {
+    margin-left:20px;
+}
+.br10 {
+   border-radius:10px;
+}
+.b1 {
+    border:1px solid var(--grey-color);
+}
+.text-center {
+    text-align: center;
 }
