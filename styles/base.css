@@ -39,18 +39,21 @@ nav ul {
     background-color: var(--primary-bgcolor);
 }
 nav li {
-    padding:10px 25px;
+   
 }
-nav li:hover {
+nav li:hover > a {
+    border-top:2px solid var(--pink-color);
     background-color: #20a4f3;
     color: var(--black-color);
 }
 nav li a {
+    display: block;
+    padding: 12px 25px;
     color: var(--white-color);    
 }
 h2 {
     background-color: var(--primary-color);
-    color: var(--white-color);
+    color: var(--black-color);
 }
 h3 {
     border-bottom: 1px solid var(--primary-bgcolor);
