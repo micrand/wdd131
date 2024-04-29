@@ -38,9 +38,6 @@ nav ul {
     align-items: center;
     background-color: var(--primary-bgcolor);
 }
-nav li {
-   
-}
 nav li:hover > a {
     border-top:2px solid var(--pink-color);
     background-color: #20a4f3;
