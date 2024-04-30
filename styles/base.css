@@ -84,7 +84,7 @@ footer a {
     background-color: #20a4f3;
 }
 .max-width {
-    width: 960px;;
+    width: 960px;
 }
 .mx-auto {
     margin: 0 auto;
@@ -129,4 +129,13 @@ img {
     border:1px solid var(--grey-color);
     padding: 10px;
     margin: 10px;
+}
+@media screen and (max-width: 768px) {
+    header, main, footer {
+        max-width: 100%;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
