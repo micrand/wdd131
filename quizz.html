@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>
+            WDD 131 - Dynamic Web Fundamentals - Mickael
+        </title>
+        <meta name="keyword" content="WDD131, learn html, css, javascript, dynamic web fundamentals, BYU" />
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Mickael Randriamihaja" />        
+        <style>
+            div.parent {
+                display: flex;        
+            }
+        </style>    
+    </head>
+    <body>
+        <span>test a0</span>  
+        <div id="reveal"></div>
+        <div class="parent">
+            <div>Content A</div>
+            <div>Content B</div>
+            <div>Content C</div>
+            <div>Content D</div>
+            <div>Content A</div>
+            <div>Content B</div>
+            <div>Content C</div>
+            <div>Content D</div>  
+            <div>Content B</div>
+            <div>Content C</div>
+            <div>Content D</div>
+            <div>Content A</div>
+            <div>Content B</div>
+            <div>Content C</div>
+            <div>Content D</div>      
+            <span>test 0.1</span>  
+            <span>test here 1</span>  
+            <span>test her2</span>  
+            <span>test here</span>  
+        </div>
+        <script>
+            let babygender = "bla";
+            const msg = document.querySelector('#reveal');
+            // msg.textContent = `🎉 Congratulations! You are having a <strong>${babygender}</strong>!`;
+            
+            msg.innerHTML = `🎉 Congratulations! You are having a <strong>${babygender}</strong>!`;
+        </script>
+    </body>
+</html>
