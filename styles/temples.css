@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #9A48D0;
+    --secondary-color: #63458A;
+    --tertiary-color: #E4B7E5;
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h1 {
+    font-size: 3rem;
+    text-align: center;    
+    padding: 1rem;
+}
+h2 {
+    padding-top: 1rem;
+    text-align: center;
+}
+#menu {
+    display: block;
+    background-color: var(--tertiary-color);
+    color: var(--black-color);
+    padding: .5rem .75rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+#menu::before {
+    content: "≡";
+}
+nav {
+    background-color: var(--secondary-color);
+    max-width: 768px;
+}
+.navigation li {
+    display: none;
+}
+.navigation  a {
+    display: block;
+    color: var(--white-color);
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+    font-weight: 700;
+    padding: 0.75rem;
+    text-align: left;    
+}
+.navigation a:hover, navigation a:active {
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+.show li {
+    display: block;
+}
+#menu.show::before {
+    content: "X";
+}
+main {    
+    margin: 0 auto;    
+}
+.galery {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+figure {
+    place-self: center;
+    margin-bottom: 15px;
+}
+figcaption {
+    text-align: center;
+}
+footer {    
+    text-align: center;
+    margin: 0 auto;
+    background-color: #E4B7E5;
+    color: var(--black-color);
+    padding: 2rem;
+}
+
+@media only screen and (min-width:640px){
+    .galery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
