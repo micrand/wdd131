@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country or place</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="styles/place.css" rel="stylesheet" type="text/css" />    
+</head>
+<body>
+    <header>
+        <h1>Madagascar</h1>
+    </header>
+    <main>        
+        <div class="hero">            
+            <picture>
+                <source srcset="week03/images/aieaie-larger.webp" media="(min-width:769px)" />
+                <source srcset="week03/images/aieaie-small.webp" media="(max-width:768px)" />
+                <img src="week03/images/aieaie-small.webp" alt="Aie Aie de Madagascar" />
+            </picture>
+        </div>
+        <div class="data">
+            <h2>Data</h2>
+            <ul id="data-list"></ul>
+        </div>
+        <div class="weather">
+            <h2>Weather <img src="week03/images/icon-weather.svg" width="64" alt="Weather" /></h2>
+            <ul id="weather-list"></ul>
+        </div>
+        <div class="license">
+            <p>Photo de <a href="https://unsplash.com/fr/@graphicnode?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Graphic Node</a> sur <a href="https://unsplash.com/fr/photos/arbres-pres-du-sentier-pendant-la-journee-yPSbirjJWzs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a><br>
+            Photo de Oleksandr P: https://www.pexels.com/fr-fr/photo/canoe-sur-plan-d-eau-avec-fond-de-pagode-2166559/</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="year-edition"></span> Mickael Randriamihaja | Country or place project<br>Last modified: <span id="last-modified"></span></p>
+    </footer>        
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>

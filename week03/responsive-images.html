@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive images</title>
+    <style>
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h2>Temple media</h2>
+        <p>Temple in Austalia</p>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 769px)" srcset="images/hero-larger.webp">
+                <source media="(max-width: 768px)" srcset="images/hero-small.webp">
+                <img src="images/hero-larger.webp" alt="">
+            </picture>
+        </div>
+    </main>
+</body>
+</html>

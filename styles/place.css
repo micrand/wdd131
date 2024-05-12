@@ -1,0 +1,141 @@
+:root {
+    --text-black: #000000;
+    --bg-black: #000000;
+    --red-color: #d90429;   
+    --white-color: #FFFFFF;
+    --green-color: #35a067;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: normal;
+    font-size: 0.85rem;    
+}
+header {
+    font-size: 1.5rem;
+    background: var(--red-color);  
+    color: var(--white-color);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 10px solid var(--green-color);
+}
+.data, .weather {    
+    background: var(--white-color);
+    padding: 15px 25px;
+}
+.data h2, .weather h2 {
+    background: var(--red-color);
+    color: var(--white-color);
+    text-align: center;
+    margin-bottom: 15px;
+    padding: 15px 25px;
+    border-bottom: 5px solid var(--green-color)
+}
+
+.data li, .weather li {
+    display: flex;
+    flex-direction: row;
+}
+.data strong, .weather strong {
+    display: block;
+    text-align: right;
+    flex: 1 1;
+}
+.data span, .weather span {
+    display: block;
+    flex: 1 1;    
+    text-align: left;
+    padding-left: 10px;
+}
+
+.weather h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 5px solid var(--green-color)
+}
+
+.data h2::before, .weather h2::before {    
+    float: left;
+    content: "";    
+    background: var(--bg-black);
+    width: 40px;
+    height: 40px;      
+    box-shadow: 5px 5px var(--green-color);  
+}
+.data h2::before {
+    position: relative;
+    top:-10px;
+    left:0;
+}
+.weather h2::before {
+    position: relative;
+    top:-25px;
+}
+
+.hero img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+footer {
+    background: var(--text-black);
+    color: var(--white-color);
+    text-align: center;
+    padding: 25px;
+}
+
+.license {
+    padding: 25px 50px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width:768px) {
+    
+    .hero img {          
+        width:100%;      
+        object-fit: cover;
+    }
+    
+    main section {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 15px 25px;
+    }
+
+    .data, .weather {
+        width: 20rem;
+    }
+
+    .data h2::before, .weather h2::before {          
+        position: absolute;
+        top: -10px; 
+        left: -10px;
+             
+    }
+
+    .data {
+        float: left;
+        position: relative;
+        top:-840px;
+        left: 25px;
+    }
+    .weather {
+        float: right;
+        position: relative;
+        top: -240px;
+        left: -25px;
+    }
+}
