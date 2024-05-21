@@ -133,16 +133,6 @@ function checkOldNew( dateOldNew ) {
   return date1.getFullYear() > 1999;
 }
 
-function checkLargeSmall( dataSize ) {  
-  let size;
-  if ( dataSize > 90000 ) {
-    size = dataSize;
-  }else if(dataSize<10000) {
-    size = dataSize;
-  }
-  return size;
-}
-
 createTemplateCard(temples);
 
 function createTemplateCard(filteredTemples){
