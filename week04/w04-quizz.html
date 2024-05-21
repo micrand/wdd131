@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>
+            WDD 131 - W04 Quizz Dynamic Web Fundamentals - Mickael
+        </title>
+        <meta name="keyword" content="WDD131, W04, Quizz" />
+        <meta name="description" content="WDD 131 - W04 Quizz Dynamic Web Fundamentals - Mickael Randriamihaja" />                
+        <style>
+            /* tr:nth-child(even) {background-color: skyblue} */
+            tr:nth-child(odd) {background-color: skyblue}
+
+            span p {font-size: 1.5rem}
+
+            @media only screen and (min-width: 32rem) {
+                span {font-size: 2rem}
+                span p {color:red;}
+            }
+
+        </style>
+    </head>
+    <body>
+        <header class="mx-auto max-width bg-primary">
+            <h1 class="p20">WDD 131 - W04 Quizz - Mickael Randriamihaja</h1>            
+            <nav class="navigation">                
+               
+            </nav>
+        </header>
+        <main class="mx-auto max-width">
+
+            <table width="300" border="1">
+                <tr>
+                    <td>Title 1</td>
+                    <td>Title 2</td>
+                    <td>Title 3</td>
+                    <td>Title 4</td>
+                </tr>
+                <tr>
+                    <td>Content 1</td>
+                    <td>Content 2</td>
+                    <td>Content 3</td>
+                    <td>Content 4</td>
+                </tr>
+                <tr>
+                    <td>Content 1</td>
+                    <td>Content 2</td>
+                    <td>Content 3</td>
+                    <td>Content 4</td>
+                </tr>
+                <tr>
+                    <td>Content 1</td>
+                    <td>Content 2</td>
+                    <td>Content 3</td>
+                    <td>Content 4</td>
+                </tr>
+                <tr>
+                    <td>Content 1</td>
+                    <td>Content 2</td>
+                    <td>Content 3</td>
+                    <td>Content 4</td>
+                </tr>
+                <tr>
+                    <td>Content 1</td>
+                    <td>Content 2</td>
+                    <td>Content 3</td>
+                    <td>Content 4</td>
+                </tr>                                                                
+            </table>
+
+            <span>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis non ad sunt perferendis ipsum. Aut exercitationem magni dicta. Ad ducimus possimus dolorum voluptatem placeat sed eius cum blanditiis qui ea?
+            </p>
+            </span>
+
+            <div id="reveal"></div>
+
+        </main>
+        <script>
+            let esomeprazole = {'id':'mnb78932','amount':23145,'amountType':'ct','expDate':'10/01/2021'}            
+            const dose = esomeprazole.amount;
+            console.log(dose);
+
+            // Q7
+            // const countries = ["Canada", "Chili", "Colombia", "Croatia", "Costa Rica"];
+            // const countriesLong = countries.filter((country) => country.length > 7);
+
+            // console.log( countriesLong);
+
+            //Q8
+            // const points = [100, 88, 94, 78, 84, 69];
+
+            // function convertPointsToStatus(pointTotal) {
+            //     let status = 'Not Complete';
+            //     if (pointTotal >= 93) {
+            //         status = "Excellent";
+            //     } else if (pointTotal >= 70) {
+            //         status = "Complete";
+            //     }
+            //     return status;
+            // }
+            
+            // const statusReport = points.map(convertPointsToStatus);
+            // console.log(statusReport);
+
+            let babygender = "Test";
+
+            let reveal = document.querySelector('#reveal');
+            // reveal.textContent =  `🎉 Congratulations! You are having a <strong>${babygender}</strong>!`;
+            // reveal.innerHTML = `🎉 Congratulations! You are having a <strong>${babygender}</strong>!`;
+            // reveal.text = `🎉 Congratulations! You are having a <strong>${babygender}</strong>!`;
+            reveal.HTMLvalue = `🎉 Congratulations! You are having a <strong>${babygender}</strong>!`;
+
+            //todo
+            //https://www.loom.com/share/af4f1ddda0b84204b214f72b544c02b3
+
+
+
+        </script>
+        <footer class="mx-auto max-width p20 text-center">
+            &copy; <span id="currentyear"></span> - Mickael Randriamihaja - Madagascar<br>
+            Last Modification: <span id="lastmodified"></span>
+        </footer>        
+    </body>
+</html>
