@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Review Form - Mickael Randriamihaja | WDD131 Dynamic web fundamentals</title>
+
+    <meta name="author" content="Mickael Randriamihaja">
+    <meta name="description" content="Review Form - Mickael Randriamihaja | WDD131 Dynamic web fundamentals">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles/form.css">
+    <script src="scripts/form.js" async></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+    <main>
+        <form class="form-container" action="review.html" method="get">
+            <label class="legend-header required-field" for="product-id">
+                Product:
+                <select id="product-id" name="product-id" required>
+                    <option disabled selected value="">Select a product...</option>
+                </select>
+            </label>            
+
+            <fieldset class="star-ratings">
+                <legend class="legend-head required-field">Overall Rating:</legend>
+                <label><input type="radio" id="fivestar" name="stars" value="5" class="form-control" required></label>
+                <label><input type="radio" id="fourstar" name="stars" value="4" class="form-control" required></label>
+                <label><input type="radio" id="threestar" name="stars" value="3" class="form-control" required></label>
+                <label><input type="radio" id="twostar" name="stars" value="2" class="form-control" required></label>
+                <label><input type="radio" id="onestar" name="stars" value="1" class="form-control" required></label>
+            </fieldset>
+
+            <label class="legend-head required-field" for="installation_date">Date of Installation:
+                <input type="date" id="installation_date" name="installation-date" class="form-control" required>
+            </label>
+            
+            <fieldset class="features" id="features">
+                <legend class="legend-head required-field">Useful features</legend>
+                <label><input type="checkbox" id="design" name="design" class="form-control"> Design</label>
+                <label><input type="checkbox" id="durability" name="durability" class="form-control"> Durability</label>
+                <label><input type="checkbox" id="ease-use" name="ease-use" class="form-control"> Ease of Use</label>
+                <label><input type="checkbox" id="performance" name="performance" class="form-control"> Performance</label>
+            </fieldset>
+              
+            <label class="legend-head" for="review">Written Review (optional)
+                <textarea id="review" name="review" class="form-control"></textarea>
+            </label>            
+
+            <label class="legend-head" for="username">User Name (optional)
+                <input type="text" id="username" name="username" class="form-control">
+            </label>           
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+    </main>
+    <footer>
+        <p>
+            ©️<span id="current-year"></span> ✨ Mickael Randriamihaja ✨ Antananarivo ✨ Madagascar<br>
+            Last Modified on: <span id="last-modified"></span>            
+        </p>
+        
+    </footer>
+</body>
+</html>
