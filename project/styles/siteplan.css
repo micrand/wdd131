@@ -79,3 +79,18 @@ header {
     width: 20px;
     height: 20px;
 }
+
+.wireframe {
+    display: flex;    
+    flex-direction: row;
+}
+.wireframe figure {
+    flex: 1 1;
+}
+
+footer {
+    background-color: #03045e;
+    color: var(--white-color);
+    text-align: center;
+    padding: 25px 10px;
+}
