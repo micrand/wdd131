@@ -57,6 +57,11 @@ header {
 
 .scenarios {
     display: flex;
+    flex-direction: column;
+    gap: 20;
+}
+.scenarios li {
+    margin-bottom: 20px;
 }
 
 .primary-color {
@@ -76,8 +81,10 @@ header {
 }
 .box-color {
     display: block;
+    float: left;
     width: 20px;
     height: 20px;
+    margin-right: 15px;
 }
 
 .wireframe {
