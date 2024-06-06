@@ -1,0 +1,173 @@
+:root {
+    --primaryColor:#00A5CF;
+    --secondaryColor:#004E64;
+    --lightColor1:#9FFFCB;
+    --lightColor2:#7AE582;
+    --grislight:#eee;
+    --dark:hsl(0, 0%, 12%);
+    --black:#000;
+    --white:#fff;
+}
+body{
+    margin:0;
+}
+header{
+    margin: 20px 260px;
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+
+}
+footer {
+    display: flex;
+    background-color: var(--primaryColor);
+    padding-top: 40px;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-link {
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+.footer-link-item{
+    color:var(--grislight);
+    padding: 5px;
+}
+.white-text{
+    color: var(--white);
+}
+.secondaryText{
+    color: var(--secondaryColor);
+}
+.grislight-bg{
+    background-color: var(--grislight);
+}
+p.custom-text {
+    line-height: 36px;
+    padding: 20px 0px;
+}
+.text-center{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family:'Rubik';
+}
+p{
+    font-family: 'Lato';
+    font-size: 18px;
+}
+.col80{
+    width: 80%;
+}
+.col70{
+    width: 70%;
+}
+.col60{
+    width: 60%;
+}
+.col50{
+    width:50%;
+}
+.col33{
+    width:33,33%;
+}
+.col30{
+    width:30%;
+}
+.col25{
+    width:25%;
+}
+.col20{
+    width:20%;
+}
+.col10{
+    width:20%;
+}
+.main-grid-container{
+    margin: 70px 0px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 80px 200px;
+    gap: 10px;
+}
+.flex-justify-space-around{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.flex-column{
+    flex-direction: column;   
+}
+.logo a{
+    color: var(--lightColor2);
+    font-family: lato;
+    font-size: xx-large;
+    font-weight: 600;    
+}
+.main-nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-nav-item{
+ color:var(--secondaryColor);
+ font-family:Rubik;
+ font-size: 16px;
+ font-weight: 500;
+}
+.main-container-full{
+    display: flex;
+    width:100%; 
+    min-height: 400px;   
+}
+.main-container{
+    display: flex;
+    margin: 20px 260px;    
+}
+.main-row{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.sub-title{
+    color:var(--secondaryColor);
+    font-family: 'Rubik';
+    font-weight: 400;
+}
+.title1{
+    color:var(--primaryColor);
+    font-size:4rem;
+    font-weight: 700;
+    font-family: 'Rubik';
+}
+.main-btn {
+    padding: 15px 25px;
+    font-size: 15px;
+    border:none;
+    border-radius: 25px;
+    background-color:var(--lightColor2);   
+    color:var(--white) ;    
+}
+.paralax-bg-container{
+    background: url(../img/green-natur-bg.jpg) no-repeat center fixed;;
+    background-size: cover;
+    min-height: 400px;
+    padding: 30px 0px;
+}
+.paralax-bg-container h2{
+    font-size: 41px;   
+}
+.Copyright {
+    display: flex;
+    justify-content: center;
+}
+.Copyright p{
+    margin: 10px;
+    font-size: 14px
+}
