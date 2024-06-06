@@ -24,19 +24,19 @@
 }
 
 .parallax-image-1 {
-    background-image: url("../images/img-parallax-nature.jpg");
+    background-image: url("../images/img-parallax-nature.webp");
 }
 
 .parallax-image-2 {
-    background-image: url("../images/img-parallax-nature-2.jpg");
+    background-image: url("../images/img-parallax-nature-2.webp");
 }
 
 .parallax-image-3 {
-    background-image: url("../images/environmental-protection-program.jpg");
+    background-image: url("../images/environmental-protection-program.webp");
 }
 
 .parallax-image-4 {
-    background-image: url("../images/digital-green-program-4.png");
+    background-image: url("../images/digital-green-program-4.webp");
 }
 
 @media only screen and (min-width:768px) {
