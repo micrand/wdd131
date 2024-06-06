@@ -70,37 +70,41 @@ const setReviewsCounter = () => {
 let numReviews = Number(getReviewsCounter()) || 0;
 const blockNumReviews = document.querySelector("#num-reviews");
 
+
+
 let submitButton = document.getElementById('product-review-form-button');
-submitButton.addEventListener( 'submit', () => {
-  let productID = document.getElementById('product-id');  
-  let productName = document.querySelector('input[name=stars]');
-  let productDate = document.getElementById('installation-date');
-  let feature1 = document.getElementById('design');
-  let feature2 = document.getElementById('durability');
-  let feature3 = document.getElementById('ease-use');
-  let feature4 = document.getElementById('performance');  
+if( submitButton ) {
+  submitButton.addEventListener( 'click', function() {
+    let productID = document.getElementById('product-id');  
+    let productName = document.querySelector('input[name=stars]');
+    let productDate = document.getElementById('installation-date');
+    let feature1 = document.getElementById('design');
+    let feature2 = document.getElementById('durability');
+    let feature3 = document.getElementById('ease-use');
+    let feature4 = document.getElementById('performance');  
 
-  let review = document.getElementById('review');  
-  let name = document.getElementById('username');
+    let review = document.getElementById('review');  
+    let name = document.getElementById('username');
 
-  let pid = productID.value;
-  let pname = productName.value;
-  let dinstall = productDate.value;
-  let design = feature1.value;
-  let durability = feature2.value;
-  let easeUse = feature3.value;
-  let performance = feature4.value;
-  let preview = review.value;
-  let userName = name.value;
+    let pid = productID.value;
+    let pname = productName.value;
+    let dinstall = productDate.value;
+    let design = feature1.value;
+    let durability = feature2.value;
+    let easeUse = feature3.value;
+    let performance = feature4.value;
+    let preview = review.value;
+    let userName = name.value;
 
-  localStorage.setItem( 'product_review_id', pid );
-  localStorage.setItem( 'product_name', pname );
-  localStorage.setItem( 'product_date_install', dinstall );
-  localStorage.setItem( 'product_feature_design', design );
-  localStorage.setItem( 'product_feature_durability', durability );
-  localStorage.setItem( 'product_feature_ease_use', easeUse );
-  localStorage.setItem( 'product_feature_performance', performance );
-  localStorage.setItem( 'product_review', preview );
-  localStorage.setItem( 'product_user_name', userName );  
+    localStorage.setItem( 'product_review_id', pid );
+    localStorage.setItem( 'product_name', pname );
+    localStorage.setItem( 'product_date_install', dinstall );
+    localStorage.setItem( 'product_feature_design', design );
+    localStorage.setItem( 'product_feature_durability', durability );
+    localStorage.setItem( 'product_feature_ease_use', easeUse );
+    localStorage.setItem( 'product_feature_performance', performance );
+    localStorage.setItem( 'product_review', preview );
+    localStorage.setItem( 'product_user_name', userName );  
 
-});
+  });
+}
