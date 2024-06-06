@@ -132,13 +132,49 @@ footer {
     padding: 2rem;
 }
 
-@media only screen and (min-width:640px){
-    .galery {
-        grid-template-columns: 1fr 1fr;
+@media only screen and (max-width:640px){
+    .hero {
+        padding: 15px;
     }
 
+    .join-btn {
+        margin-left:25px;        
+    }
+
+    .motivation-text {
+        padding: 15px 25px;
+        margin-top: -300px;
+        color: var(--white-color);
+    }
+
+    .media {
+        padding: 25px;
+    }
+    .block-media {
+        margin-top: 100px;
+    }
+    .block-media video {
+        max-width:100%;
+    }
+    .media h4 {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .container-smaller {
+        padding: 25px;
+    }
+    .container-smaller h5 {
+        padding-bottom: 25px;
+    }
+    .program {
+        flex-direction: column;
+    }
+    .program .box {
+        margin-top: 50px;
+    }
     
 }
+
 .text-center {
     text-align: center;
 }
