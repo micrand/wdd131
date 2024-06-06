@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>
+            Contact us at Green Blue planet WDD 131 - Final project Mickael Randriamihaja
+        </title>
+        <meta name="keyword" content="WDD131, Contact form, Green Blue planet, final project, learn html, css, javascript, dynamic web fundamentals, Temples, BYU" />
+        <meta name="description" content="Contact us at Green Blue planet - WDD 131 - Final project Mickael Randriamihaja" />                
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+        <link href="styles/design.css" rel="stylesheet">
+        <link href="styles/design-large.css" rel="stylesheet">
+        <script src="scripts/scripts.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo flex-col1">
+                <a href="index.html">
+                    <h1>Green Blue Planet</h1>
+                </a>
+            </div>
+            <nav class="flex-col2">
+                <a id="menu" href="#"></a>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="program.html">Program</a></li>
+                    <li><a href="subscribe.html">Subscribe</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="motivation">
+                <div class="parallax parallax-image-1"></div>
+                <div class="motivation-text container">
+                    <h3>Take care of the earth and she will take care of you.</h3> 
+                    <p>Do not squander even the smallest creation, for grains of sand build mountains, and atoms form the infinite. 
+                        The natural system, of which humans are a part, inherently seeks equilibrium, self-adjustment, 
+                        and self-purification.</p>
+                </div>
+            </section>
+
+            <div class="hero container p-50">
+
+                <div class="flex-col2">
+                    <h2 class="p-25">Contact us at GBP</h2>
+                    <p class="p-25">
+                        Ensure the integration of environmental issues into plans and programs; Manage budgets and resources for the implementation of environmental activities; Provide reports and monitor the results obtained; Organize workshops.
+                    </p>
+                </div>
+                <div class="flex-col1 hero-block">
+                    <a href="subscribe.html" class="join-btn" role="button">Join the program</a>
+                </div>
+
+            </div>
+            <section class="container-smaller form-contact">        
+                <h3>Feel free to fill the form below:</h3>    
+
+                    <div class="wrapper">
+                        <div class="contacts">
+                            <h3>Our contacts</h3>
+                  
+                            <ul>
+                                <li>Mickael R.</li>
+                                <li>00-123456-78</li>
+                                <li>mail@greenblueplanet.world</li>
+                            </ul>
+                        </div>
+                  
+                        <div class="form">
+                            <h3>Send us a message</h3>
+                            <form name="contact-form" action="thankyou.html">
+                                <p>
+                                    <label for="contact-name">Your name
+                                        <input type="text" id="contact-name" name="contact-name">
+                                    </label>
+                                </p>
+                                <p>
+                                    <label for="skype">Skype
+                                        <input type="text" id="skype" name="skype">
+                                    </label>
+                                </p>
+                                <p>
+                                    <label for="contact-mail">Email Address
+                                        <input type="email" id="contact-mail" name="contact-mail" required>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label for="topic">Topic
+                                        <input type="text" id="topic" name="topic">
+                                    </label>
+                                </p>
+                                <p class="full-width">
+                                    <label for="message">Write your message
+                                        <textarea name="message" id="message" cols="30" rows="4"></textarea>
+                                    </label>
+                                </p>
+                                <p class="full-width">
+                                    <button class="submit-button">Send</button>
+                                </p>
+                            </form>
+                      </div>
+                    </div>
+            </section>
+
+            <section class="container mt-50 mb-50">
+
+                <h2 class="upper mt-25">Join the program</h2>
+                <p class="join-text container-smaller text-center p-25">
+                    When you join one of our environmental conservation programs, you’ll witness first-hand how 
+                    collective individual effort is an important catalyst for significant global change. So what are you waiting for? It’s time to stand up for our planet and make a difference!
+                </p>
+
+                <div class="program">
+
+                    <div class="box">
+                        <img src="images/people.svg" alt="Understand the fact and unite" loading="lazy" width="150">
+                        <h3>Understand the fact - Unite</h3>
+                        <p>Comprehend the truth - Come togethe</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/environment.svg" alt="learn and take responsibility for environment protection" loading="lazy" width="150">
+                        <h3>Learn and take responsibility</h3>
+                        <p>Acquire knowledge and embrace accountability.</p>
+                    </div>
+                    <div class="box">
+                        <img src="images/plant-treen.svg" alt="make action to plan tree" loading="lazy" width="150">
+                        <h3>Join the program for free</h3>
+                        <p>Get started and make positive action</p>
+                    </div>
+                </div>     
+                <div class="text-center mt-50">
+                    <a href="subscribe.html" class="join-btn mt-50" >Join the program</a>
+                </div>      
+
+            </section>
+        </main>
+        <div id="newsletter-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="container-newsletter text-center">
+                    <h2>Subscribe to our Newsletter</h2>
+                    <p id="thank-newsletter">Get informed of our environment protection news and updates every week!</p>
+                </div>
+                <form class="form-newsletter" action="thankyou.html">
+                    <div class="container-newsletter">
+                        <label for="name">
+                            <input type="text" placeholder="Name" id="name" name="name" required>
+                        </label>
+                        <label for="mail">
+                            <input type="text" placeholder="Email address" id="mail" name="mail" required>
+                        </label>
+                        <label for="subscribe">
+                            <input type="checkbox" checked="checked" name="subscribe" id="subscribe"> Weekly newsletter
+                        </label>
+                    </div>
+              
+                    <div class="container">
+                        <input type="submit" value="Subscribe" id="subscribe-newsletter" class="submit-newsletter">
+                    </div>
+                 </form>
+              
+            </div>          
+        </div>
+        <footer>
+            <p id="newsletter-subscribed-notification"></p>
+            <p>&copy;<span id="current-year"></span> Green Blue Planet by Randriamihaja Mickael - Madagascar</p>
+            <p><span id="last-updated-date"></span></p>
+        </footer>
+    </body>
+</html>
