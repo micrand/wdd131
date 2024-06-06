@@ -58,7 +58,7 @@ header {
 .scenarios {
     display: flex;
     flex-direction: column;
-    gap: 20;
+    gap: 20px;
 }
 .scenarios li {
     margin-bottom: 20px;
